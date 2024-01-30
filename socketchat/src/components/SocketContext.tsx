@@ -23,7 +23,7 @@ export const SocketProvider: React.FC<SocketProviderProps> = ({ children }) => {
   const [topRooms, setTopRooms] = useState<TopRoom[]>([]);
 
   useEffect(() => {
-    const newSocket = io("http://localhost:3005");
+    const newSocket = io(import.meta.env.VITE_API_URL);
     setSocket(newSocket);
 
     return () => {
