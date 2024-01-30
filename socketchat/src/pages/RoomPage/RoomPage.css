@@ -1,0 +1,109 @@
+.main-section {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.room-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px 100px 20px;
+  width: 70%;
+  height: 100%;
+  max-width: 1200px;
+  max-height: 800px;
+  margin-top: 25vh;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.data-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+
+.best-rooms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 80%;
+  border-left: 1px solid #ccc;
+  padding: 10px 10px 30px 10px;
+}
+
+.best-rooms h3 {
+  margin-bottom: 20px;
+}
+
+.input-username {
+  width: 50%;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.input-room {
+  width: 50%;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.submit-button {
+  width: 50%;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 18px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .room-page {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .data-box {
+    width: 100%;
+  }
+
+  .best-rooms {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #ccc;
+  }
+
+  .input-username {
+    width: 100%;
+  }
+
+  .input-room {
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
